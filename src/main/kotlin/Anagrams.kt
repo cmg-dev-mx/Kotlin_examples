@@ -1,6 +1,9 @@
 object Anagrams {
 
     fun isValid(s1: String, s2: String): Boolean {
+        if (s1.length != s2.length) {
+            return false
+        }
 
         val freq1 = hashMapOf<Char, Int>()
         s1.forEach { ch ->
