@@ -15,7 +15,7 @@ object Anagrams {
         }
 
         freq1.keys.forEach { key ->
-            if (freq2.containsKey(key).not()
+            if (!freq2.containsKey(key)
                 || freq1[key] != freq2[key]) {
                 return false
             }
